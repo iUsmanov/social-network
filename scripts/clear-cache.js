@@ -1,0 +1,10 @@
+/**
+ * Скрипт, который удаляет папку `cache` в `node_modules`
+ *	после установки любого npm-пакета
+ *
+ */
+
+const fs = require('fs');
+const { join: joinPath } = require('path');
+const cacheDir = joinPath(__dirname, '..', 'node_modules/.cache');
+fs.rmSync(cacheDir, { recursive: true, force: true });

@@ -42,13 +42,13 @@ export default [
 			],
 			'fsd-paths-guard/no-relative-import-to-public-api': 'error',
 		},
-	},
-	{
 		ignores: ['node_modules', 'build', 'scripts'],
-		globals: {
-			__IS_DEV__: true,
-			__API__: true,
-			__ENVIRON__: true,
+		languageOptions: {
+			globals: {
+				__IS_DEV__: true,
+				__API__: true,
+				__ENVIRON__: true,
+			},
 		},
 	},
 ];

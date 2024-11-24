@@ -1,6 +1,10 @@
 import { memo } from 'react';
 import { Outlet } from 'react-router-dom';
+import { withTheme } from '../providers/themeProvider';
 
-export const App = memo(() => {
+const App = memo(() => {
 	return <Outlet />;
 });
+
+const AppWithTheme = withTheme(App);
+export { AppWithTheme as App };

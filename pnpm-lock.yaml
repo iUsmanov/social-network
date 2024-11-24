@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@babel/runtime':
+        specifier: ^7.26.0
+        version: 7.26.0
       classnames:
         specifier: ^2.5.1
         version: 2.5.1

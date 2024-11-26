@@ -15,6 +15,8 @@ export default [
 	{
 		plugins: { 'fsd-paths-guard': fsdPathsGuard, 'react-hooks': reactHooks },
 		rules: {
+			'@typescript-eslint/no-unused-vars': 'warn',
+			'@typescript-eslint/no-empty-object-type': 'warn',
 			'react-hooks/rules-of-hooks': 'error',
 			'react-hooks/exhaustive-deps': 'error',
 			'react/react-in-jsx-scope': 'off',
@@ -39,7 +41,7 @@ export default [
 				'error',
 				{
 					alias: '@',
-					ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+					ignoreImportPatterns: ['**/storeProvider', '**/testing'],
 				},
 			],
 			'fsd-paths-guard/no-relative-import-to-public-api': 'error',
